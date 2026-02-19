@@ -1,0 +1,83 @@
+.navbar{
+ display: grid;
+ grid-template-columns: 5fr 1fr;
+ /*flex-direction: column;*/
+height: 20px;
+width: 1300px;
+padding: 10px;
+border: 10px;
+border-radius: 20px;
+align-items: end;
+background-color: rgb(79, 79, 187);
+color: aliceblue;
+}
+
+.logo{
+  font-size: medium;
+  font-weight: bolder;
+}
+.nav-links  {
+  color: aliceblue;
+  display: grid;
+ grid-template-columns: 50px 50px;
+}
+
+.nav-links a{
+  color:aliceblue
+}
+
+.hero{
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border: 20px;
+  margin: 10px;
+}
+.image img{
+  height: 400px;
+  width: 400px;
+  border-radius: 40%;
+  border: 20px;
+  margin: 20px;
+  padding: 30px;
+
+}
+
+h3{
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+p{
+  font-style: italic;
+  font-size: 20px;
+}
+
+button{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  
+
+}
+
+.upload-box{
+  padding: 20px;
+  height: 100px;
+  width: 250px;
+  background-color: bisque;
+  border: 10px;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  right: 70%;
+  
+}
+
+.file{
+  
+  justify-content: space-between;
+
+}
