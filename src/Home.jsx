@@ -1,8 +1,11 @@
-import image from './assets/Ai-image.jpg';
+import aiimage from './assets/background4.jpg';
+import bgimage from './assets/background1.jpg';
 
 function Home() {
   return (
-    <div>
+    <div className='background'>
+   
+      
     <div className='navtag'>
       <nav className="navbar">
         <div className="logo">SkillScan AI</div>
@@ -19,9 +22,7 @@ function Home() {
   <h3>Optimize Your Career  with AI</h3>
   <p>Instanly Analyze your resume  & get your feedback</p>
 </div>
-<div className="image">
-  <img src={image}  alt='Ai-image'/>
-</div>
+
       </div>
       <div>
         <form className='upload-box'>
@@ -32,7 +33,9 @@ function Home() {
        
       </div>
       <button>Analyze Resume</button>
-    </div>
+     
+      </div>
+    
   );
 }
 

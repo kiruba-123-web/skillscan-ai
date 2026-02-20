@@ -1,78 +1,119 @@
+
+
+ .background {
+  background-image: url('./assets/background1.jpg'); /* relative path from Home.css */
+  position: relative;
+  background-size: cover;           /* makes the image cover the entire div */
+  background-position: center;      /* centers the image */
+  background-repeat: no-repeat;     /* prevents tiling */
+  width: 100vw;                     /* full width of viewport */
+ min-height: 100vh;
+ padding-bottom: 40px;
+                   /* full height of viewport */
+}
+
+
+
+
 .navbar{
  display: grid;
- grid-template-columns: 5fr 1fr;
+ grid-template-columns: 8fr 1fr;
+ justify-content: space-between;
  /*flex-direction: column;*/
-height: 20px;
-width: 1300px;
-padding: 10px;
-border: 10px;
-border-radius: 20px;
-align-items: end;
-background-color: rgb(79, 79, 187);
+height:auto;
+width: 100%;
+padding: 15px 40px;
+gap: 20px;
+border-radius: 10px;
+align-items: center;
+background-color: rgba(20, 20, 60, 0.6);
+backdrop-filter: blur(8px);
 color: aliceblue;
+border-radius: 10px;
+position: relative;
+z-index: 2;
 }
 
 .logo{
-  font-size: medium;
-  font-weight: bolder;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 .nav-links  {
   color: aliceblue;
-  display: grid;
- grid-template-columns: 50px 50px;
+   display: flex;
+  gap: 25px
 }
 
 .nav-links a{
-  color:aliceblue
+  color:aliceblue;
+  text-decoration: none;
+   font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease
+
+}
+.nav-links a:hover {
+  color: #00e0ff;
+  text-shadow: 0 0 8px #00e0ff;
 }
 
 .hero{
-
+  position: relative;
+  z-index: 2;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   border: 20px;
-  margin: 10px;
-}
-.image img{
-  height: 400px;
-  width: 400px;
-  border-radius: 40%;
-  border: 20px;
-  margin: 20px;
-  padding: 30px;
+  margin: 60px auto 0;
+  
+  color: white;
+  
 
 }
+
 
 h3{
   font-size: 40px;
   font-weight: bolder;
+  color: white;
 }
 
 p{
   font-style: italic;
   font-size: 20px;
+  color: white;
 }
 
 button{
   display: block;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+ margin: 20px  auto;
   border-radius: 10px;
+  height: 30px;
+  width: 200px;
   
 
 }
 
 .upload-box{
-  padding: 20px;
-  height: 100px;
+  /* padding: 20px; */
+  height: 120px;
   width: 250px;
-  background-color: bisque;
-  border: 10px;
-  border-radius: 50px;
-  position: absolute;
-  top: 50%;
-  right: 70%;
+  /* background-color: rgb(243, 236, 226); */
+  /* border: 10px; */
+  /* border-radius: 20px; */
+  text-align: center;
+font-size: large;
+font-weight: bolder;
+  line-height: 2;
+  display: block;
+  margin: 30px auto;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
   
 }
 
