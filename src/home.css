@@ -1,124 +1,100 @@
-
-
- .background {
-  background-image: url('./assets/background1.jpg'); /* relative path from Home.css */
-  position: relative;
-  background-size: cover;           /* makes the image cover the entire div */
-  background-position: center;      /* centers the image */
-  background-repeat: no-repeat;     /* prevents tiling */
-  width: 100vw;                     /* full width of viewport */
- min-height: 100vh;
- padding-bottom: 40px;
-                   /* full height of viewport */
+/* PAGE BACKGROUND */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2ff, #f3e8ff);
+  font-family: sans-serif;
 }
 
-
-
-
-.navbar{
- display: grid;
- grid-template-columns: 8fr 1fr;
- justify-content: space-between;
- /*flex-direction: column;*/
-height:auto;
-width: 100%;
-padding: 15px 40px;
-gap: 20px;
-border-radius: 10px;
-align-items: center;
-background-color: rgba(20, 20, 60, 0.6);
-backdrop-filter: blur(8px);
-color: aliceblue;
-border-radius: 10px;
-position: relative;
-z-index: 2;
-}
-
-.logo{
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-.nav-links  {
-  color: aliceblue;
-   display: flex;
-  gap: 25px
-}
-
-.nav-links a{
-  color:aliceblue;
-  text-decoration: none;
-   font-size: 18px;
-  font-weight: 500;
-  transition: 0.3s ease
-
-}
-.nav-links a:hover {
-  color: #00e0ff;
-  text-shadow: 0 0 8px #00e0ff;
-}
-
-.hero{
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  border: 20px;
-  margin: 60px auto 0;
-  
+/* NAVBAR */
+.navbar {
+  background: #0d1b3d;
   color: white;
-  
-
-}
-
-
-h3{
-  font-size: 40px;
-  font-weight: bolder;
-  color: white;
-}
-
-p{
-  font-style: italic;
-  font-size: 20px;
-  color: white;
-}
-
-button{
-  display: block;
- margin: 20px  auto;
-  border-radius: 10px;
-  height: 30px;
-  width: 200px;
-  
-
-}
-
-.upload-box{
-  /* padding: 20px; */
-  height: 120px;
-  width: 250px;
-  /* background-color: rgb(243, 236, 226); */
-  /* border: 10px; */
-  /* border-radius: 20px; */
-  text-align: center;
-font-size: large;
-font-weight: bolder;
-  line-height: 2;
-  display: block;
-  margin: 30px auto;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.3);
-  color: white;
-  
-}
-
-.file{
-  
+  padding: 15px 40px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
 
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* MAIN CONTAINER */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 60px;
+}
+
+/* LEFT IMAGE */
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ai-img {
+  width: 400px;
+  max-width: 100%;
+}
+
+/* RIGHT CONTENT */
+.right {
+  flex: 1;
+}
+
+.right h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.right p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* UPLOAD BOX */
+.upload-box {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px dashed #aaa;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upload-box input {
+  margin-top: 10px;
+}
+
+.file-name {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
