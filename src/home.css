@@ -1,4 +1,26 @@
 /* PAGE BACKGROUND */
+:root {
+  --primary-blue: #1E3A8A;
+  --secondary-blue: #2563EB;
+  --accent-cyan: #06B6D4;
+  --light-cyan: #67E8F9;
+  --background: #F0F9FF;
+  --text-dark: #0F172A;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-dark);
+}
+
+/* Gradient Option */
+/* Purple + Blue Theme */
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2ff, #3e8fff);
+  font-family: sans-serif;
+}
 .page {
   min-height: 100vh;
   background: linear-gradient(to right, #eef2ff, #f3e8ff);
